@@ -3,10 +3,10 @@ arr = ["money", "account", "bank", "$", "transaction", "country", "business",...
         "#", "foreign", "assistance", "family", "company", "name", "Bank",...
         "know", "late", "claim"];
 
+tot = 23;
 prompt = "Enter the body text of the email: ";
 txt = input(prompt,"s");
 C = count(txt, arr);
-tot = round(mean(C));
 likelihood = C / tot;
 scam = likelihood >= 0.5;
 likelihood
